@@ -47,17 +47,17 @@ public class BaseTest
 		
 		if(useGrid.equalsIgnoreCase("Yes"))
 		{
-			URL url=new URL(gridURL);
+			URL grid_url=new URL(gridURL);
 			
 			if(browser.equalsIgnoreCase("Chrome"))
 			{
 				ChromeOptions options=new ChromeOptions();
-				driver=new RemoteWebDriver(url, options);
+				driver=new RemoteWebDriver(grid_url, options);
 			}
 			else if(browser.equalsIgnoreCase("Firefox")) 
 			{
 				FirefoxOptions options=new FirefoxOptions();
-				driver=new RemoteWebDriver(url, options);
+				driver=new RemoteWebDriver(grid_url, options);
 			}
 			else
 			{
